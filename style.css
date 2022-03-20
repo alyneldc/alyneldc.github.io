@@ -1,0 +1,46 @@
+#menu {
+  position: relative;
+  width: 95px;
+  border-right: 1px black solid;
+}
+
+#sous-menu1 {
+  display: none;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  top: 22px;
+  left: 135px;
+}
+
+#sous-menu2 {
+  display: none;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  top: 44px;
+  left: 135px;
+}
+
+#contient-sm1:hover #sous-menu1,
+#contient-sm2:hover #sous-menu2 {
+  display: block;
+}
+
+li::marker {
+  content: none;
+}
+
+li {
+  color: palevioletred;
+  padding: 2px;
+}
+
+#menu li:hover {
+  background-color: rgb(196, 193, 193);
+}
+
+#sous-menu1 li:hover,
+#sous-menu2 li:hover {
+  background-color: rgb(229, 226, 226);
+}
